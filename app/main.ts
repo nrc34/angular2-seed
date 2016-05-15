@@ -1,16 +1,5 @@
 import {bootstrap} from '@angular/platform-browser-dynamic';
-import {Component} from '@angular/core';
+import {AppComponent} from "./components/Application.component";
 
-@Component({
-    selector: 'app',
-    template: `<h1>Hello {{ name }}!</h1>`
-})
-class AppComponent {
-    name: string;
 
-    constructor() {
-        this.name = 'Angular 2';
-    }
-}
-
-bootstrap(AppComponent);
+bootstrap(AppComponent).catch(err => console.error(err));
