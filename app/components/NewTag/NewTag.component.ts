@@ -1,4 +1,4 @@
-import {Component, Input, Output} from '@angular/core';
+import {Component, Input, Output, OnInit} from '@angular/core';
 import {EventEmitter} from "@angular/core";
 
 @Component({
@@ -9,9 +9,9 @@ import {EventEmitter} from "@angular/core";
     <h5 (click)="onClickMe()">click here!!{{text}}</h5>
 `
 })
-export class NewTag {
+export class NewTag implements OnInit{
 
-    @Input()text:string;
+    @Input() text:string;
     @Output() textFromNewTag = new EventEmitter<string>();
     constructor() {
     }
