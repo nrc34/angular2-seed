@@ -8,7 +8,8 @@
     "server": "node node_modules/http-server/bin/http-server",
     "postinstall": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "tsc"
+    "dist": "rimraf dist/app && tsc",
+    "serve-dist": "cd dist && http-server"
   },
   "repository": {
     "type": "git",
