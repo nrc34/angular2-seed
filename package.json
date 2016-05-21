@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node_modules/.bin/live-server --port=5000",
     "server": "node node_modules/http-server/bin/http-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "typings install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "tsc"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,8 @@
   "devDependencies": {
     "http-server": "^0.9.0",
     "live-server": "^1.0.0",
-    "typescript": "^1.8.10"
+    "typescript": "^1.8.10",
+    "typings": "^0.7.12"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.1",
