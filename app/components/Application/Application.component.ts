@@ -8,7 +8,7 @@ import {NewTag} from "../NewTag/NewTag.component";
     <input [(ngModel)]="text" type="text">
     <h2>{{text}}</h2>
     <h5 *ngFor="let item of textsFromNewT">{{item}}</h5>
-    <new-tag [text]="text" (textFromNewTag)="onTextFromNewTag($event)"></new-tag>
+    <new-tag [my-text]="text" (textFromNewTag)="onTextFromNewTag($event)"></new-tag>
 `,
     directives: [NewTag]
 })

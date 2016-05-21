@@ -11,7 +11,7 @@ import {EventEmitter} from "@angular/core";
 })
 export class NewTag implements OnInit{
 
-    @Input() text:string;
+    @Input('my-text') text:string;
     @Output() textFromNewTag = new EventEmitter<string>();
     constructor() {
     }
